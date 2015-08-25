@@ -1,0 +1,79 @@
+
+
+/*========================================= Toolbar related CSS ========================*/
+
+.RadFileExplorer_Office2010Blue .RadToolBar .rtbText
+{
+	background-image: url('FileExplorer/FileExplorerToolbarSprites.png');
+	background-repeat: no-repeat;
+}
+
+/* IE6 does not support the alpha channel of png files, so we force it to use gif */
+* html .RadFileExplorer_Office2010Blue .RadToolBar .rtbText
+{
+	background-image: url('FileExplorer/FileExplorerToolbarSpritesIE6.gif') !important;
+}
+
+.RadFileExplorer_Office2010Blue .rgDataDiv
+{
+	background-color: #fff;
+}
+
+.RadFileExplorer_Office2010Blue, 
+.RadFileExplorer_Office2010Blue .rfeAddressBox,
+.RadFileExplorer_Office2010Blue .rfeFilterTxt
+{
+	border-color: #8ba0bc;
+}
+
+.DialogSeparator
+{
+    border-left: solid 1px #8ba0bc;
+    border-right: solid 1px #8ba0bc;
+    background-color: #c9d4e4;
+}
+
+div.selectedFileName
+{
+    border-top: solid 1px #8ba0bc;
+}
+
+.RadFileExplorer_Office2010Blue .RadSplitter_Office2010Blue, 
+.RadFileExplorer_Office2010Blue .RadSplitter_Office2010Blue .rspPaneTabContainer 
+{
+    border: none;
+}
+
+/* Overwrites padding for better presentation and space saving */
+.RadFileExplorer_Office2010Blue .RadGrid .rgRow td, 
+.RadFileExplorer_Office2010Blue .RadGrid .rgAltRow td, 
+.RadFileExplorer_Office2010Blue .RadGrid .rgEditRow td, 
+.RadFileExplorer_Office2010Blue .RadGrid .rgFooter td 
+{
+padding-left: 8px;
+padding-right: 8px;
+}
+
+/* Thumbnail view */
+
+.RadFileExplorer_Office2010Blue .rfeThumbList a:hover,
+.RadFileExplorer_Office2010Blue .rfeThumbList .rfeSelectedLink,
+.RadFileExplorer_Office2010Blue .rfeThumbList .rfeSelectedLink:hover
+{
+	background-image: url('../Common/Gradients/office2010Blue_smoothSprite_20.png');
+	background-color: #fcf5d9;
+	border-color:#fceaab;
+}
+
+.RadFileExplorer_Office2010Blue .rfeThumbList .rfeSelectedLink,
+.RadFileExplorer_Office2010Blue .rfeThumbList .rfeSelectedLink:hover 
+{
+	background-color: #ffef7c;
+}
+
+/* Thumbnail filter */
+.RadFileExplorer_Office2010Blue .rfeFilterContainer
+{
+	background-image: url('../Common/Gradients/office2010Blue_smoothSprite_20.png');
+	background-color: #fcf5d9;
+}

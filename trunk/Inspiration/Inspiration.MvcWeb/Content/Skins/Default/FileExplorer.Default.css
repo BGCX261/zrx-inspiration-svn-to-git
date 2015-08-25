@@ -1,0 +1,59 @@
+
+
+/*========================================= Toolbar related CSS ========================*/
+
+.RadFileExplorer_Default .RadToolBar .rtbText
+{
+	background-image: url('FileExplorer/FileExplorerToolbarSprites.png');
+	background-repeat: no-repeat;
+}
+
+/* IE6 does not support the alpha channel of png files, so we force it to use gif */
+* html .RadFileExplorer_Default .RadToolBar .rtbText
+{
+	background-image: url('FileExplorer/FileExplorerToolbarSpritesIE6.gif') !important;
+}
+
+.RadFileExplorer_Default, 
+.RadFileExplorer_Default .rfeAddressBox,
+.RadFileExplorer_Default .rfeFilterTxt
+{
+	border-color: #999;
+}
+
+.DialogSeparator
+{
+    border-left: solid 1px #828282;
+    border-right: solid 1px #989697;
+    background-color: #ececec;
+}
+
+div.selectedFileName
+{
+    border-top: solid 1px #8e8e8e;
+}
+
+/* Thumbnail view */
+.RadFileExplorer_Default .rfeThumbList a:hover,
+.RadFileExplorer_Default .rfeThumbList .rfeSelectedLink,
+.RadFileExplorer_Default .rfeThumbList .rfeSelectedLink:hover
+{
+	background-image: url('../Common/Gradients/default_smoothSprite_20.png');
+	background-color: #c5c5c5;
+	border-color:#B5B5B5 #B5B5B5 #9E9E9E;
+	color: #333;
+}
+
+.RadFileExplorer_Default .rfeThumbList .rfeSelectedLink,
+.RadFileExplorer_Default .rfeThumbList .rfeSelectedLink:hover 
+{
+	background-color: #828282;
+	color: #fff;
+}
+
+/* Thumbnail filter */
+.RadFileExplorer_Default .rfeFilterContainer
+{
+	background-image: url('../Common/Gradients/default_smoothSprite_20.png');
+	background-color: #c5c5c5;
+}

@@ -1,0 +1,34 @@
+﻿@model IList<Inspiration.Model.Person>
+<table>
+    <tr>
+        <td>
+            ID
+        </td>
+        <td>
+            Name
+        </td>
+        <td>
+            Address
+        </td>
+        <td>
+            Tel
+        </td>
+    </tr>
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <tr>
+            <td>
+                @Model[i].ID
+            </td>
+            <td>
+                @Model[i].Name
+            </td>
+            <td>
+                @Model[i].Address
+            </td>
+            <td>
+                @Model[i].Tel
+            </td>
+        </tr>
+    }
+</table>

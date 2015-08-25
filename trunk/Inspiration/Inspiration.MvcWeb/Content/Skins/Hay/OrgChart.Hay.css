@@ -1,0 +1,126 @@
+/**
+ * Organizational Chart Hay Skin
+ */
+
+
+
+
+/*----------------------------------------------------------------------------*/
+
+
+
+
+/** Global wrapper */
+.RadOrgChart_Hay {
+	color: #272722;
+	font: normal 12px/22px "Segoe UI", Arial, sans-serif;
+}
+
+
+
+
+/** Viewport */
+.RadOrgChart_Hay .rocViewport {}
+
+
+
+
+/** NodeList */
+.RadOrgChart_Hay .rocNodeList {}
+
+
+
+
+/** Node */
+.RadOrgChart_Hay .rocNode {}
+
+
+
+
+/** Group */
+.RadOrgChart_Hay .rocGroup {
+	border-radius: 10px;
+	background-color: #ececd8;
+}
+
+
+
+
+/** ItemList */
+.RadOrgChart_Hay .rocItemList {}
+
+
+
+
+/** ItemWrap */
+.RadOrgChart_Hay .rocItemWrap {}
+
+
+
+
+/** Items */
+.RadOrgChart_Hay .rocItem {}
+
+
+	.RadOrgChart_Hay .rocItemContent,
+	.RadOrgChart_Hay .rocItemTemplate {
+		border-color: #959485;
+		border-radius: 5px;
+		background-color: #dee0c8;
+		background-image: url('../Common/OrgChart/rocItemTileLight.png');
+		_background-image: none;
+	}
+
+
+
+
+/** Toggle handle */
+/*.RadOrgChart_Forest .rocToggleHandle,*/
+.RadOrgChart_Hay .rocExpandArrow,
+.RadOrgChart_Hay .rocCollapseArrow,
+.RadOrgChart_Hay .rocExpandGroupArrow,
+.RadOrgChart_Hay .rocCollapseGroupArrow {
+		border-color: #959485;
+		border-radius: 3px;
+		background-color: #dee0c8;
+		background-image: url('../Common/Actions/actionExpandCollapseDark.png');
+}
+
+
+
+
+/** Node lines */
+.RadOrgChart_Hay .rocLineUp,
+.RadOrgChart_Hay .rocLineDown,
+.RadOrgChart_Hay .rocLineHorizontal {
+	background-image: url('../Common/OrgChart/rocLinesDark.png');
+}
+
+
+
+
+/** Drag and Drop */
+.rocDetachedItemContainer.RadOrgChart_Hay,
+.rocDetachedNodeContainer.RadOrgChart_Hay {}
+
+
+
+
+	/** Drag ghost */
+	.rocDetachedItemContainer.RadOrgChart_Hay .rocGhostItem,
+	.rocDetachedNodeContainer.RadOrgChart_Hay .rocGhostNode {
+		border-color: #959485;
+		border-radius: 5px;
+		background-color: #dee0c8;
+		background-image: url('../Common/OrgChart/rocItemTileLight.png');
+		_background-image: none;
+	}
+
+
+
+
+	/** Drag Drop Clue */
+	.rocDetachedItemContainer.RadOrgChart_Hay .rocDropClue,
+	.rocDetachedNodeContainer.RadOrgChart_Hay .rocDropClue {
+		background-image: url('../Common/Actions/actionDragDropDark.png');
+	}

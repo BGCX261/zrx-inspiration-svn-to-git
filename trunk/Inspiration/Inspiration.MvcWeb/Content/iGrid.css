@@ -1,0 +1,10 @@
+﻿.iGrid { width: 800px; }
+.iGrid thead td { padding: 3px; line-height: 20px;  cursor:pointer;}
+.iGrid thead td:hover {  background-color:#EAEAEA; }
+.iGrid tbody td { padding: 3px; line-height: 20px; }
+.iGrid tbody tr { cursor: pointer; }
+.iGrid .igrid-chk{}
+.iGrid tbody .tr-hover { background-color: #EAEAEA; }
+.iGrid tbody .tr-selected { background-color: #CCC; }
+
+

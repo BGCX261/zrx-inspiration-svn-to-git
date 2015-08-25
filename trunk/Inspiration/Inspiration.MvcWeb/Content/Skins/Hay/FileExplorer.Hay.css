@@ -1,0 +1,69 @@
+
+
+/*========================================= Toolbar related CSS ========================*/
+
+.RadFileExplorer_Hay .RadToolBar .rtbText
+{
+	background-image: url('FileExplorer/FileExplorerToolbarSprites.png');
+	background-repeat: no-repeat;
+}
+
+/* IE6 does not support the alpha channel of png files, so we force it to use gif */
+* html .RadFileExplorer_Hay .RadToolBar .rtbText
+{
+	background-image: url('FileExplorer/FileExplorerToolbarSpritesIE6.gif') !important;
+}
+
+.RadFileExplorer_Hay, 
+.RadFileExplorer_Hay .rfeAddressBox,
+.RadFileExplorer_Hay .rfeFilterTxt
+{
+	border-color: #575646;
+}
+
+.RadFileExplorer_Hay .rfeAddressBox,
+.RadFileExplorer_Hay .rfeFilterTxt
+{
+	color: #272722;
+}
+
+.DialogSeparator
+{
+    border-left: solid 1px #cac8ab;
+    border-right: solid 1px #959485;
+    background-color: #dee0c8;
+}
+
+/* Overwrites padding for better presentation and space saving */
+.RadFileExplorer_Hay .RadGrid .rgRow td, 
+.RadFileExplorer_Hay .RadGrid .rgAltRow td, 
+.RadFileExplorer_Hay .RadGrid .rgEditRow td, 
+.RadFileExplorer_Hay .RadGrid .rgFooter td 
+{
+padding-left: 8px;
+padding-right: 8px;
+}
+
+/* Thumbnail view */
+
+.RadFileExplorer_Hay .rfeThumbList a:hover,
+.RadFileExplorer_Hay .rfeThumbList .rfeSelectedLink,
+.RadFileExplorer_Hay .rfeThumbList .rfeSelectedLink:hover
+{
+	background-image: url('../Common/Gradients/hay_smoothSprite_20.png');
+	background-color: #d7f2c0;
+	border-color:#47952a;
+}
+
+.RadFileExplorer_Hay .rfeThumbList .rfeSelectedLink,
+.RadFileExplorer_Hay .rfeThumbList .rfeSelectedLink:hover 
+{
+	background-color: #80c949;
+}
+
+/* Thumbnail filter */
+.RadFileExplorer_Hay .rfeFilterContainer
+{
+	background-image: url('../Common/Gradients/hay_smoothSprite_20.png');
+	background-color: #d7f2c0;
+}

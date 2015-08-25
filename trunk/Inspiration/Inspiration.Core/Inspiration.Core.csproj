@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D266F5DC-10BE-45D0-954F-9920ADE50914}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspiration.Core</RootNamespace>
+    <AssemblyName>Inspiration.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.2.6.1.841\lib\NET40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Configuration">
+      <HintPath>..\packages\Autofac.2.6.1.841\lib\NET40\Autofac.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc">
+      <HintPath>..\packages\Autofac.Mvc3.2.6.1.841\lib\NET40\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Caching\Extensions.cs" />
+    <Compile Include="Caching\ICacheManager.cs" />
+    <Compile Include="Caching\MemoryCacheManager.cs" />
+    <Compile Include="Caching\NopNullCache.cs" />
+    <Compile Include="Caching\PerRequestCacheManager.cs" />
+    <Compile Include="CollectionTExtensions.cs" />
+    <Compile Include="CoreContext.cs" />
+    <Compile Include="CoreEngine.cs" />
+    <Compile Include="Data\BaseEntity.cs" />
+    <Compile Include="Data\EfRepository.cs" />
+    <Compile Include="Data\IDbContext.cs" />
+    <Compile Include="Data\IRepository.cs" />
+    <Compile Include="Data\SoianObjectContext.cs" />
+    <Compile Include="Data\SqlDataSearch.cs" />
+    <Compile Include="Data\SQLHelper.cs" />
+    <Compile Include="DependencyManagement\AutofacRequestLifetimeHttpModule.cs" />
+    <Compile Include="DependencyManagement\ComponentLifeStyle.cs" />
+    <Compile Include="DependencyManagement\ContainerConfigurer.cs" />
+    <Compile Include="DependencyManagement\ContainerManager.cs" />
+    <Compile Include="DependencyManagement\CoreDependencyResolver.cs" />
+    <Compile Include="DependencyManagement\IDependencyRegistrar.cs" />
+    <Compile Include="Enum\EnumBase.cs" />
+    <Compile Include="Enum\EnumItem.cs" />
+    <Compile Include="Extension\CollectionTExtensions.cs" />
+    <Compile Include="Extension\MefDependencySolver.cs" />
+    <Compile Include="Infracstructure\EventBroker.cs" />
+    <Compile Include="Infracstructure\Singleton.cs" />
+    <Compile Include="IPersistentCollection.cs" />
+    <Compile Include="PersistentCollection.cs" />
+    <Compile Include="PlurializeHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singleton\Singleton.cs" />
+    <Compile Include="TypeFinder\AppDomainTypeFinder.cs" />
+    <Compile Include="TypeFinder\ITypeFinder.cs" />
+    <Compile Include="TypeFinder\WebAppTypeFinder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<script type="text/javascript">
+    $(function () {
+        $("#mydialog").iDialog({ url: "@Url.Content("~/dialog/details")", useIframe: false });
+        $("#aOpen").click(function () {
+            $("#mydialog").iDialog("open");
+        });
+    });
+</script>
+<a href="#" id="aOpen">open</a>
+<div id="mydialog" class="iDialog">
+    <div class="title">
+        <div class='title-text'>
+            mydialog</div>
+        <div class='title-close'>
+            x</div>
+    </div>
+    <div class="content">
+    </div>
+</div>
+@*<div id="mydialog" class="iDialog">
+    <div class="title">
+        <div class='title-text'>
+            mydialog</div>
+        <div class='title-close'>
+            x</div>
+    </div>
+    <div class="content">
+        <iframe width='100%' height="100" frameborder='0' scrolling='auto'>
+        </iframe>
+    </div>
+</div>*@ @*
+<div id="mydialog" class="iDialog">
+    <div class="title">
+        <div class="title-left">
+        </div>
+        <div class="title-right">
+        </div>
+        <div class="title-middle">
+            <div class='title-text'>
+                mydialog</div>
+            <div class='title-close'>
+                x</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-left">
+        </div>
+        <div class="content-right">
+        </div>
+        <div class="content-middle">
+
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot-left">
+        </div>
+        <div class="foot-right">
+        </div>
+        <div class="foot-middle">
+        </div>
+    </div>
+</div>*@
+<br />

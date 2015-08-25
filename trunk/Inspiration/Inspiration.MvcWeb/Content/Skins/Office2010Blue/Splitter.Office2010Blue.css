@@ -1,0 +1,95 @@
+/* RadSplitter for ASP.NET AJAX - Office2010Blue Skin */
+
+/* Borders */
+.RadSplitter_Office2010Blue,
+.RadSplitter_Office2010Blue .rspPaneTabContainer,
+
+/* Vertical RadSplitter items */
+.RadSplitter_Office2010Blue .rspPane, 
+.RadSplitter_Office2010Blue .rspResizeBar,
+.RadSplitter_Office2010Blue .rspSlideContainerResize,
+
+/* Horizontal RadSplitter items */
+.RadSplitter_Office2010Blue .rspPaneHorizontal,
+.RadSplitter_Office2010Blue .rspResizeBarHorizontal,
+.RadSplitter_Office2010Blue .rspSlideContainerResizeHorizontal
+{
+	border-color:#8ba0bc;
+}
+
+/* When ShowContentDuringLoad="false" */
+.RadSplitter_Office2010Blue .rspLoading
+{
+    background-image: url('Common/loading.gif');
+}
+
+/* RadSplitBar/RadSlidingPane resize elements */
+.RadSplitter_Office2010Blue .rspResizeBar,
+.RadSplitter_Office2010Blue .rspSlideContainerResize,
+.RadSplitter_Office2010Blue .rspResizeBarOver,
+.RadSplitter_Office2010Blue .rspSlideContainerResizeOver
+{
+	background-image: url('Splitter/ResizeBarVerticalSprites.gif');
+	background-color: #ececec;
+    border-right-color:#8ba0bc;
+}
+
+.RadSplitter_Office2010Blue .rspResizeBarHorizontal,
+.RadSplitter_Office2010Blue .rspSlideContainerResizeHorizontal,
+.RadSplitter_Office2010Blue .rspResizeBarOverHorizontal,
+.RadSplitter_Office2010Blue .rspSlideContainerResizeOverHorizontal
+{
+	background-image: url('Splitter/ResizeBarHorizontalSprites.gif');
+	background-color: #ececec;
+    border-bottom-color:#8ba0bc;
+}
+
+
+/* RadSlidingPane tab */
+.RadSplitter_Office2010Blue .rspPaneTabContainer,
+/* RadSlidingPane buttons */
+.RadSplitter_Office2010Blue .rspSlideHeaderDockIcon,
+.RadSplitter_Office2010Blue .rspSlideHeaderUndockIcon,
+.RadSplitter_Office2010Blue .rspSlideHeaderCollapseIcon,
+/* RadSplitBar buttons */
+.RadSplitter_Office2010Blue .rspCollapseBarExpand,
+.RadSplitter_Office2010Blue .rspCollapseBarCollapse,
+
+.RadSplitter_Office2010Blue .rspCollapseBarHorizontalExpand,
+.RadSplitter_Office2010Blue .rspCollapseBarHorizontalCollapse
+{
+    background-image:url('Splitter/ExpandCollapseBarsCommands.gif');
+}
+
+/* RadSlidingPane tab */
+
+/* RadSplitBar buttons */
+
+/* RadSlidingPane buttons */
+
+/* RadSlidingPane header */
+.RadSplitter_Office2010Blue .rspSlideHeader, 
+/* RadSlidingPane title */
+.RadSplitter_Office2010Blue .rspSlideTitleContainer,
+/* RadSlidingPane tab, SlideDirection=Top/Bottom */
+.RadSplitter_Office2010Blue .rspBottom .rspPaneTabContainer,
+.RadSplitter_Office2010Blue .rspTop .rspPaneTabContainer
+{
+	background-image:url('Splitter/slideTitleContainerBgr.gif');
+	background-repeat:repeat-x;
+}
+
+.RadSplitter_Office2010Blue .rspBottom .rspPaneTabContainer,
+.RadSplitter_Office2010Blue .rspTop .rspPaneTabContainer
+{
+    background-position:0 -1px;
+}
+
+/* RadSlidingPane title text */
+.RadSplitter_Office2010Blue .rspSlideTitle,
+/* RadSlidingPane tab text */
+.RadSplitter_Office2010Blue .rspPaneTabText
+{
+	color:#384e73;
+}
+

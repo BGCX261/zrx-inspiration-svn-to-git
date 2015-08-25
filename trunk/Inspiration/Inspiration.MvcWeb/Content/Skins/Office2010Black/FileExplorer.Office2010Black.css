@@ -1,0 +1,84 @@
+
+
+/*========================================= Toolbar related CSS ========================*/
+
+.RadFileExplorer_Office2010Black .RadToolBar .rtbText
+{
+	background-image: url('FileExplorer/FileExplorerToolbarSprites.png');
+	background-repeat: no-repeat;
+}
+
+/* IE6 does not support the alpha channel of png files, so we force it to use gif */
+* html .RadFileExplorer_Office2010Black .RadToolBar .rtbText
+{
+	background-image: url('FileExplorer/FileExplorerToolbarSpritesIE6.gif') !important;
+}
+
+.RadFileExplorer_Office2010Black .rgDataDiv
+{
+	background-color: #fff;
+}
+
+.RadFileExplorer_Office2010Black, 
+.RadFileExplorer_Office2010Black .rfeAddressBox,
+.RadFileExplorer_Office2010Black .rfeFilterTxt
+{
+	border-color: #262626;
+}
+
+.DialogSeparator
+{
+    border-left: solid 1px #2c2c2c;
+    border-right: solid 1px #2c2c2c;
+    background-color: #545454;
+}
+
+div.selectedFileName
+{
+    border-top: solid 1px #2c2c2c;
+}
+
+.RadFileExplorer_Office2010Black .RadSplitter_Office2010Black, 
+.RadFileExplorer_Office2010Black .RadSplitter_Office2010Black .rspPaneTabContainer 
+{
+    border: none;
+}
+
+/* Overwrites padding for better presentation and space saving */
+.RadFileExplorer_Office2010Black .RadGrid .rgRow td, 
+.RadFileExplorer_Office2010Black .RadGrid .rgAltRow td, 
+.RadFileExplorer_Office2010Black .RadGrid .rgEditRow td, 
+.RadFileExplorer_Office2010Black .RadGrid .rgFooter td 
+{
+padding-left: 8px;
+padding-right: 8px;
+}
+
+/* Thumbnail view */
+
+.RadFileExplorer_Office2010Black .rfeThumbList a:hover,
+.RadFileExplorer_Office2010Black .rfeThumbList .rfeSelectedLink,
+.RadFileExplorer_Office2010Black .rfeThumbList .rfeSelectedLink:hover
+{
+	background-image: url('../Common/Gradients/office2010Black_smoothSprite_20.png');
+	background-color: #fff3c9;
+	border-color:#ffe68b;
+}
+
+.RadFileExplorer_Office2010Black .rfeThumbList .rfeSelectedLink,
+.RadFileExplorer_Office2010Black .rfeThumbList .rfeSelectedLink:hover 
+{
+	background-color: #feed76;
+}
+
+/* Thumbnail filter */
+.RadFileExplorer_Office2010Black .rfeFilterContainer
+{
+	background-image: url('../Common/Gradients/office2010Black_smoothSprite_20.png');
+	background-color: #fff3c9;
+}
+
+.RadForm_Office2010Black.rfdLabel .rfeThumbnailsContainer label
+{
+    color: #000;
+}

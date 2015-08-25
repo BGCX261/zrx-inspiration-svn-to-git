@@ -1,0 +1,101 @@
+/* RadSplitter for ASP.NET AJAX - Sitefinity Skin */
+
+/* Borders */
+.RadSplitter_Sitefinity,
+.RadSplitter_Sitefinity .rspPaneTabContainer,
+
+/* Vertical RadSplitter items */
+.RadSplitter_Sitefinity .rspPane, 
+.RadSplitter_Sitefinity .rspResizeBar,
+.RadSplitter_Sitefinity .rspSlideContainerResize,
+
+/* Horizontal RadSplitter items */
+.RadSplitter_Sitefinity .rspPaneHorizontal,
+.RadSplitter_Sitefinity .rspResizeBarHorizontal,
+.RadSplitter_Sitefinity .rspSlideContainerResizeHorizontal
+{
+	border-color:#ccc;
+}
+
+/* When ShowContentDuringLoad="false" */
+.RadSplitter_Sitefinity .rspLoading
+{
+    background-image: url('Common/loading.gif');
+}
+
+/* RadSplitBar/RadSlidingPane resize elements */
+.RadSplitter_Sitefinity .rspResizeBar,
+.RadSplitter_Sitefinity .rspSlideContainerResize,
+.RadSplitter_Sitefinity .rspResizeBarOver,
+.RadSplitter_Sitefinity .rspSlideContainerResizeOver
+{
+	background-image: url('Splitter/ResizeBarVerticalSprites.gif');
+	background-color: #ececec;
+    border-right-color:#ccc;
+}
+
+.RadSplitter_Sitefinity .rspResizeBarHorizontal,
+.RadSplitter_Sitefinity .rspSlideContainerResizeHorizontal,
+.RadSplitter_Sitefinity .rspResizeBarOverHorizontal,
+.RadSplitter_Sitefinity .rspSlideContainerResizeOverHorizontal
+{
+	background-image: url('Splitter/ResizeBarHorizontalSprites.gif');
+	background-color: #ececec;
+    border-bottom-color:#ccc;
+}
+
+/* RadSlidingPane tab */
+.RadSplitter_Sitefinity .rspPaneTabContainer,
+/* RadSlidingPane buttons */
+.RadSplitter_Sitefinity .rspSlideHeaderDockIcon,
+.RadSplitter_Sitefinity .rspSlideHeaderUndockIcon,
+.RadSplitter_Sitefinity .rspSlideHeaderCollapseIcon,
+/* RadSplitBar buttons */
+.RadSplitter_Sitefinity .rspCollapseBarExpand,
+.RadSplitter_Sitefinity .rspCollapseBarCollapse,
+
+.RadSplitter_Sitefinity .rspCollapseBarHorizontalExpand,
+.RadSplitter_Sitefinity .rspCollapseBarHorizontalCollapse
+{
+    background-image:url('Splitter/ExpandCollapseBarsCommands.gif');
+}
+
+/* RadSlidingPane tab */
+
+/* RadSplitBar buttons */
+
+/* RadSlidingPane buttons */
+
+/* RadSlidingPane header */
+.RadSplitter_Sitefinity .rspSlideHeader, 
+/* RadSlidingPane title */
+.RadSplitter_Sitefinity .rspSlideTitleContainer,
+/* RadSlidingPane tab, SlideDirection=Top/Bottom */
+.RadSplitter_Sitefinity .rspBottom .rspPaneTabContainer,
+.RadSplitter_Sitefinity .rspTop .rspPaneTabContainer
+{
+	background-image:url('Splitter/slideTitleContainerBgr.gif');
+	background-repeat:repeat-x;
+}
+
+.RadSplitter_Sitefinity .rspBottom .rspPaneTabContainer,
+.RadSplitter_Sitefinity .rspTop .rspPaneTabContainer
+{
+    background-position:0 -1px;
+}
+
+/* RadSlidingPane title text */
+.RadSplitter_Sitefinity .rspSlideTitle,
+/* RadSlidingPane tab text */
+.RadSplitter_Sitefinity .rspPaneTabText
+{
+	color:#000;
+}
+
+/* RadSlidingPane header elements */
+.RadSplitter_Sitefinity .rspSlideTitleContainer,
+.RadSplitter_Sitefinity .rspSlideHeaderIconWrapper
+{
+	border-bottom:solid 1px #828282;
+}
+

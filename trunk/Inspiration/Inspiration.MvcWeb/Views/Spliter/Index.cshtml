@@ -1,0 +1,100 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<script type="text/javascript">
+    $(function () {
+        //        $("#slider").iSlider();
+        $('#slider').iSlider({
+            mouseStart: function (e) {
+                $("#msg").html("mouseStart");
+                // Handle the start of a drag-and-drop sequence here ...
+            },
+            mouseDrag: function (e) {
+                $("#msg").html("mouseDrag");
+                // Handle the dragging ...
+            },
+            mouseStop: function (e) {
+                $("#msg").html("mouseStop");
+                // Handle the drop ...
+            },
+            mouseCapture: function (e) {
+                $("#msg").html("mouseCapture");
+                // Optional event handler: Return false here when you want to ignore a
+                // drag-and-drop sequence, so the start/drag/stop events don't fire ...
+                return true;
+            }
+
+            // Goodies from the Mouse plugin:
+            // Minimum distance in pixels before dragging is triggered
+            //distance: 1
+            // Minimum time in milliseconds before dragging is triggered
+            //delay: 0
+        });
+    });
+</script>
+<div style="padding: 50px;">
+    <div id="slider" style="position: relative; text-align: left; border: solid 1px gray;
+        width: 500px; height: 20px; z-index: 1;">
+        <a id="sliderBar" style="position: absolute; left: 0%; height: 30px; border: solid 1px #CCC;
+            width: 20px; z-index: 2; top: -5px; margin-left: 0px;"></a>
+    </div>
+</div>
+<div id="msg">
+</div>
+<div>
+    <a href="~/Plugins/Person">Person</a>
+</div>
+
+@*
+<script type="text/javascript">
+    $(function () {
+        SetLayout();
+
+    });
+    function SetLayout() {
+        $("#tableContainer").height($(window).height());
+
+        $("#divLeft").height($(window).height() - $("#divTop").height() - $("#divBottom").height());
+        //$("#divCenter").width($(window).width() - $("#divLeft").width());
+        $("#divCenter").height($("#divLeft").height());
+    }
+</script>
+<table id="tableContainer" style="width: 100%;" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="2" style="height: 100px;">
+            <div style="border: solid 1px Gray; width: 100%; height: 100%;">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 200px;">
+            <div style="border: solid 1px Gray; width: 100%; height: 100%;">
+            </div>
+        </td>
+        <td>
+            <iframe src="about:blank" id="iframeMain" width="100%" height="100%" frameborder="1">
+            </iframe>
+<iframe src="http://www.baidu.com" id="iframeMain" width="100%" height="100%" frameborder="0"
+    scrolling="auto"></iframe>
+</td> </tr>
+<tr>
+    <td colspan="2" style="height: 30px;">
+        <div style="border: solid 1px Gray; width: 100%; height: 100%;">
+        </div>
+    </td>
+</tr>
+</table>*@ @*    <div id="divTop" style="height: 100px;">
+        欢迎您
+    </div>
+    <div id="divMiddle">
+        <div id="divLeft" style="width: 50px; float: left;">
+            菜单
+        </div>
+        <div id="divCenter" style="">
+            中间
+        </div>
+    </div>
+    <div id="divBottom" style="width: 100%; height: 100px; float: left;">
+        科技创造美好生活
+    </div>*@ 

@@ -1,0 +1,58 @@
+
+
+/*========================================= Toolbar related CSS ========================*/
+
+.RadFileExplorer_Telerik .RadToolBar .rtbText
+{
+	background-image: url('FileExplorer/FileExplorerToolbarSprites.png');
+	background-repeat: no-repeat;
+}
+
+/* IE6 does not support the alpha channel of png files, so we force it to use gif */
+* html .RadFileExplorer_Telerik .RadToolBar .rtbText
+{
+	background-image: url('FileExplorer/FileExplorerToolbarSpritesIE6.gif') !important;
+}
+
+.RadFileExplorer_Telerik, 
+.RadFileExplorer_Telerik .rfeAddressBox,
+.RadFileExplorer_Telerik .rfeFilterTxt
+{
+	border-color: #828282;
+}
+
+.DialogSeparator
+{
+    border-left: solid 1px #828282;
+    border-right: solid 1px #828282;
+    background-color: #ececec;
+}
+
+div.selectedFileName
+{
+    border-top: solid 1px #8e8e8e;
+}
+
+/* Thumbnail view */
+.RadFileExplorer_Telerik .rfeThumbList a:hover,
+.RadFileExplorer_Telerik .rfeThumbList .rfeSelectedLink,
+.RadFileExplorer_Telerik .rfeThumbList .rfeSelectedLink:hover
+{
+	background-image: url('../Common/Gradients/telerik_smoothSprite_20.png');
+	background-color: #a2ea8b;
+	border-color:#d0f7c3;
+}
+
+.RadFileExplorer_Telerik .rfeThumbList .rfeSelectedLink,
+.RadFileExplorer_Telerik .rfeThumbList .rfeSelectedLink:hover 
+{
+	background-color: #63ac39;
+	border-color: #9dce78;
+}
+
+/* Thumbnail filter */
+.RadFileExplorer_Telerik .rfeFilterContainer
+{
+	background-image: url('../Common/Gradients/telerik_smoothSprite_20.png');
+	background-color: #a2ea8b;
+}

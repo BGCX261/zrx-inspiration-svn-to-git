@@ -1,0 +1,121 @@
+/**
+ * Organizational Chart Metro Skin
+ */
+
+
+
+
+/*----------------------------------------------------------------------------*/
+
+
+
+
+/** Global wrapper */
+.RadOrgChart_Metro {
+	color: #767676;
+	font: normal 12px/22px "Segoe UI", Arial, sans-serif;
+}
+
+
+
+
+/** Viewport */
+.RadOrgChart_Metro .rocViewport {}
+
+
+
+
+/** NodeList */
+.RadOrgChart_Metro .rocNodeList {}
+
+
+
+
+/** Node */
+.RadOrgChart_Metro .rocNode {}
+
+
+
+
+/** Group */
+.RadOrgChart_Metro .rocGroup {
+	background-color: #e5e5e5;
+}
+
+
+
+
+/** ItemList */
+.RadOrgChart_Metro .rocItemList {}
+
+
+
+
+/** ItemWrap */
+.RadOrgChart_Metro .rocItemWrap {}
+
+
+
+
+/** Items */
+.RadOrgChart_Metro .rocItem {
+	color: #ffffff;
+}
+
+
+	.RadOrgChart_Metro .rocItemContent,
+	.RadOrgChart_Metro .rocItemTemplate {
+		border-color: #25a0da;
+		background-color: #25a0da;
+	}
+
+
+
+
+/** Toggle handle */
+/*.RadOrgChart_Metro .rocToggleHandle,*/
+.RadOrgChart_Metro .rocExpandArrow,
+.RadOrgChart_Metro .rocCollapseArrow,
+.RadOrgChart_Metro .rocExpandGroupArrow,
+.RadOrgChart_Metro .rocCollapseGroupArrow {
+		border-color: #25a0da;
+		background-color: #25a0da;
+		background-image: url('../Common/Actions/actionExpandCollapseLight.png');
+}
+
+
+
+
+/** Node lines */
+.RadOrgChart_Metro .rocLineUp,
+.RadOrgChart_Metro .rocLineDown,
+.RadOrgChart_Metro .rocLineHorizontal {
+	background-image: url('../Common/OrgChart/rocLinesDark.png');
+}
+
+
+
+
+/** Drag and Drop */
+.rocDetachedItemContainer.RadOrgChart_Metro,
+.rocDetachedNodeContainer.RadOrgChart_Metro {}
+
+
+
+
+	/** Drag ghost */
+	.rocDetachedItemContainer.RadOrgChart_Metro .rocGhostItem,
+	.rocDetachedNodeContainer.RadOrgChart_Metro .rocGhostNode {
+		border-color: #e5e5e5;
+		color: #ffffff;
+		background-color: #25a0da;
+	}
+
+
+
+
+	/** Drag Drop Clue */
+	.rocDetachedItemContainer.RadOrgChart_Metro .rocDropClue,
+	.rocDetachedNodeContainer.RadOrgChart_Metro .rocDropClue {
+		background-image: url('../Common/Actions/actionDragDropLight.png');
+	}

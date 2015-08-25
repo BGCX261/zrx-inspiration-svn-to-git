@@ -1,0 +1,113 @@
+/* RadSplitter for ASP.NET AJAX - Outlook Skin */
+
+/* Borders */
+.RadSplitter_Outlook,
+.RadSplitter_Outlook .rspPaneTabContainer,
+
+/* Vertical RadSplitter items */
+.RadSplitter_Outlook .rspPane, 
+.RadSplitter_Outlook .rspResizeBar,
+.RadSplitter_Outlook .rspSlideContainerResize,
+
+/* Horizontal RadSplitter items */
+.RadSplitter_Outlook .rspPaneHorizontal,
+.RadSplitter_Outlook .rspResizeBarHorizontal,
+.RadSplitter_Outlook .rspSlideContainerResizeHorizontal
+{
+	border-color:#89aee3;
+}
+
+/* When ShowContentDuringLoad="false" */
+.RadSplitter_Outlook .rspLoading
+{
+    background-image: url('Common/loading.gif');
+}
+
+/* RadSplitBar/RadSlidingPane resize elements */
+.RadSplitter_Outlook .rspResizeBar,
+.RadSplitter_Outlook .rspSlideContainerResize,
+.RadSplitter_Outlook .rspResizeBarOver,
+.RadSplitter_Outlook .rspSlideContainerResizeOver
+{
+	background-image: url('Splitter/ResizeBarVerticalSprites.gif');
+	background-color: #e3eeff;
+}
+
+.RadSplitter_Outlook .rspResizeBarOver,
+.RadSplitter_Outlook .rspSlideContainerResizeOver
+{
+    background:#e3eeff none; /*-4px 0*/    
+}
+
+.RadSplitter_Outlook .rspResizeBarHorizontal,
+.RadSplitter_Outlook .rspSlideContainerResizeHorizontal
+{
+	background-iamge: url('Splitter/ResizeBarHorizontalSprites.gif');
+	background-color: #e3eeff;
+}
+
+.RadSplitter_Outlook .rspResizeBarOverHorizontal,
+.RadSplitter_Outlook .rspSlideContainerResizeOverHorizontal
+{
+    background:#e3eeff none; /*0 -4px;*/
+}
+
+/* RadSlidingPane tab */
+.RadSplitter_Outlook .rspPaneTabContainer,
+/* RadSlidingPane buttons */
+.RadSplitter_Outlook .rspSlideHeaderDockIcon,
+.RadSplitter_Outlook .rspSlideHeaderUndockIcon,
+.RadSplitter_Outlook .rspSlideHeaderCollapseIcon,
+/* RadSplitBar buttons */
+.RadSplitter_Outlook .rspCollapseBarExpand,
+.RadSplitter_Outlook .rspCollapseBarCollapse,
+
+.RadSplitter_Outlook .rspCollapseBarHorizontalExpand,
+.RadSplitter_Outlook .rspCollapseBarHorizontalCollapse
+{
+    background-image:url('Splitter/ExpandCollapseBarsCommands.gif');
+}
+
+/* RadSlidingPane tab */
+.RadSplitter_Outlook .rspPaneTabContainer
+{
+    background-color:#e3eeff;
+}
+
+/* RadSplitBar buttons */
+
+/* RadSlidingPane buttons */
+
+
+/* RadSlidingPane header */
+.RadSplitter_Outlook .rspSlideHeader, 
+/* RadSlidingPane title */
+.RadSplitter_Outlook .rspSlideTitleContainer,
+/* RadSlidingPane tab, SlideDirection=Top/Bottom */
+.RadSplitter_Outlook .rspBottom .rspPaneTabContainer,
+.RadSplitter_Outlook .rspTop .rspPaneTabContainer
+{
+	background-image:url('Splitter/slideTitleContainerBgr.gif');
+	background-repeat:repeat-x;
+}
+
+.RadSplitter_Outlook .rspBottom .rspPaneTabContainer,
+.RadSplitter_Outlook .rspTop .rspPaneTabContainer
+{
+    background-position:0 -1px;
+}
+
+/* RadSlidingPane title text */
+.RadSplitter_Outlook .rspSlideTitle,
+/* RadSlidingPane tab text */
+.RadSplitter_Outllok .rspPaneTabText
+{
+	color:#000;
+}
+
+/* RadSlidingPane header elements */
+.RadSplitter_Outlook .rspSlideTitleContainer,
+.RadSplitter_Outlook .rspSlideHeaderIconWrapper
+{
+	border-bottom:solid 1px #89aee3;
+}

@@ -1,0 +1,102 @@
+/* RadSplitter for ASP.NET AJAX - Vista Skin */
+
+/* Borders */
+.RadSplitter_Vista,
+.RadSplitter_Vista .rspPaneTabContainer,
+
+/* Vertical RadSplitter items */
+.RadSplitter_Vista .rspPane, 
+.RadSplitter_Vista .rspResizeBar,
+.RadSplitter_Vista .rspSlideContainerResize,
+
+/* Horizontal RadSplitter items */
+.RadSplitter_Vista .rspPaneHorizontal,
+.RadSplitter_Vista .rspResizeBarHorizontal,
+.RadSplitter_Vista .rspSlideContainerResizeHorizontal
+{
+	border-color:#a7bac5;
+}
+
+/* When ShowContentDuringLoad="false" */
+.RadSplitter_Vista .rspLoading
+{
+    background-image: url('Common/loading.gif');
+}
+
+/* RadSplitBar/RadSlidingPane resize elements */
+.RadSplitter_Vista .rspResizeBar,
+.RadSplitter_Vista .rspSlideContainerResize,
+.RadSplitter_Vista .rspResizeBarOver,
+.RadSplitter_Vista .rspSlideContainerResizeOver
+{
+	background-image: url('Splitter/ResizeBarVerticalSprites.gif');
+	background-color: #94cfee;
+    border-right-color:#2c628b;
+}
+
+.RadSplitter_Vista .rspResizeBarHorizontal,
+.RadSplitter_Vista .rspSlideContainerResizeHorizontal,
+.RadSplitter_Vista .rspResizeBarOverHorizontal,
+.RadSplitter_Vista .rspSlideContainerResizeOverHorizontal
+{
+	background-image: url('Splitter/ResizeBarHorizontalSprites.gif');
+	background-color: #94cfee;
+    border-bottom-color:#2c628b;
+}
+
+/* RadSlidingPane tab */
+.RadSplitter_Vista .rspPaneTabContainer,
+/* RadSlidingPane buttons */
+.RadSplitter_Vista .rspSlideHeaderDockIcon,
+.RadSplitter_Vista .rspSlideHeaderUndockIcon,
+.RadSplitter_Vista .rspSlideHeaderCollapseIcon,
+/* RadSplitBar buttons */
+.RadSplitter_Vista .rspCollapseBarExpand,
+.RadSplitter_Vista .rspCollapseBarCollapse,
+
+.RadSplitter_Vista .rspCollapseBarHorizontalExpand,
+.RadSplitter_Vista .rspCollapseBarHorizontalCollapse
+{
+    background-image:url('Splitter/ExpandCollapseBarsCommands.gif');
+}
+
+/* RadSlidingPane tab */
+
+/* RadSplitBar buttons */
+
+/* RadSlidingPane buttons */
+
+/* RadSlidingPane header */
+.RadSplitter_Vista .rspSlideHeader, 
+/* RadSlidingPane title */
+.RadSplitter_Vista .rspSlideTitleContainer,
+/* RadSlidingPane tab, SlideDirection=Top/Bottom */
+.RadSplitter_Vista .rspBottom .rspPaneTabContainer,
+.RadSplitter_Vista .rspTop .rspPaneTabContainer
+{
+	background-image:url('Splitter/slideTitleContainerBgr.gif');
+	background-repeat:repeat-x;
+}
+
+.RadSplitter_Vista .rspBottom .rspPaneTabContainer,
+.RadSplitter_Vista .rspTop .rspPaneTabContainer
+{
+    background-position:0 -1px;
+}
+
+/* RadSlidingPane header elements */
+.RadSplitter_Vista .rspSlideTitleContainer,
+.RadSplitter_Vista .rspSlideHeaderIconWrapper
+{
+	border-bottom:solid 1px #3c7fb1;
+}
+
+/* RadSlidingPane title text */
+.RadSplitter_Vista .rspSlideTitle,
+/* RadSlidingPane tab text */
+.RadSplitter_Vista .rspPaneTabText
+{
+	color:#003399;
+}
+
+
